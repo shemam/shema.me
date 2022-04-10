@@ -1,0 +1,65 @@
+@import './variables';
+
+.container {
+  @include medium {
+    grid-template-areas: 'aside main';
+    grid-template-columns: 1fr 3fr;
+  }
+  @include mid-large {
+    grid-template-columns: 1fr 3fr;
+  }
+  @include xlarge {
+    grid-template-columns: 1fr 4fr;
+  }
+  @include max-medium {
+    grid-template-rows: 60px 1fr;
+  }
+
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  aside,
+  main,
+  footer {
+    color: $lighter;
+  }
+
+  aside {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    @include medium {
+      grid-area: aside;
+      height: 100vh;
+    }
+  }
+
+  main::-webkit-scrollbar {
+    display: none;
+  }
+
+  main {
+    @include medium {
+      grid-area: main;
+    }
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    section {
+      @include medium {
+        width: 100%;
+      }
+      @include mid-large {
+        width: 90%;
+      }
+      @include xlarge {
+        width: 70%;
+      }
+
+      width: 95%;
+
+      margin: 0 auto;
+      padding: 2rem;
+    }
+  }
+}

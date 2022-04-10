@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Pacifico&display=swap');
+@import '../../styles/variables';
+
+.navbar {
+  display: grid;
+
+  @include max-medium {
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    width: 90%;
+  }
+
+  @include medium {
+    grid-template-rows: 1fr 10fr;
+    padding: 2rem 1.5rem;
+    background: rgba($secondary, 0.2);
+    backdrop-filter: blur(30px);
+
+    h1 {
+      padding: 2rem 1rem;
+      align-self: center;
+      text-align: center;
+      border: $primary 1px solid;
+      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    }
+  }
+
+  height: 100%;
+  margin: 0 auto;
+
+  h1 {
+    font-family: 'Pacifico', cursive;
+    line-height: 1.2;
+    font-size: clamp(1.2rem, 2vw, 2rem);
+  }
+
+  .humberg {
+    justify-self: end;
+    z-index: 10;
+
+    .menu {
+      font-size: 1.6rem;
+      background: none;
+    }
+    @include medium {
+      display: none;
+    }
+  }
+  .none {
+    display: none;
+
+    @include medium {
+      display: block;
+      margin-top: 4rem;
+      padding: 0rem 0.3rem;
+
+      .menuItems {
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        li {
+          text-transform: capitalize;
+          margin: 1rem 0;
+        }
+      }
+    }
+  }
+  .leftNav {
+    @include max-medium {
+      display: block;
+      overflow-y: scroll;
+      position: fixed;
+      top: 0;
+      background: rgba(6, 19, 19, 0.932);
+      left: 0;
+      bottom: 0;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+      z-index: 1;
+      .menuItems {
+        height: 100%;
+        margin-top: 10rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        li {
+          text-transform: capitalize;
+          margin: 1rem 0;
+        }
+      }
+    }
+  }
+}
