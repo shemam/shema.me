@@ -45,7 +45,23 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
 
+    .heroSection {
+      border: red 1px solid;
+    }
+
+    .skillsSection {
+      height: 100vh;
+    }
+
     section {
+      height: 95vh;
+
+      h1 {
+        font-size: 2rem;
+        font-weight: 800;
+        // text-align: center;
+        color: $lighter;
+      }
       @include medium {
         width: 100%;
       }
