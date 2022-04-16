@@ -1,2 +1,2 @@
-/* eslint-disable import/prefer-default-export */
 export { default as NavBar } from './navbar';
+export { default as Skills } from './Skills';

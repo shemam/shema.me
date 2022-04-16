@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { NavBar } from '../components';
+import { NavBar, Skills } from '../components';
 import styles from '../styles/Home.module.scss';
 
 const Home: NextPage = () => (
@@ -15,31 +15,30 @@ const Home: NextPage = () => (
       <NavBar />
     </aside>
     <main>
-      <section className={styles.heroSection}>
+      <section>
         <div>
           <h1>Hero section</h1>
         </div>
       </section>
 
-      <section className={styles.AboutSection}>
+      <section>
         <div>
           <h1>About section</h1>
         </div>
       </section>
 
-      <section className={styles.SkillsSection}>
-        <div>
-          <h1>Skills section</h1>
-        </div>
+      <section className="" style={{}}>
+        <h1>Key Skills</h1>
+        <Skills />
       </section>
 
-      <section className={styles.WorkSection}>
+      <section>
         <div>
           <h1>Work section</h1>
         </div>
       </section>
 
-      <section className={styles.ContactSection}>
+      <section>
         <div>
           <h1>Contact section</h1>
         </div>

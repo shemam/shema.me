@@ -1,0 +1,80 @@
+@import '../../styles/variables';
+
+.container {
+  ul {
+    margin: 2.5rem 0;
+    display: flex;
+    justify-content: center;
+    border: $light 3px solid;
+    background-color: transparent;
+
+    li {
+      width: 100%;
+      padding: 1rem 4rem;
+      text-align: center;
+      color: $lighter;
+      background-color: transparent;
+      transition: all 0.5s;
+    }
+
+    li:hover {
+      box-shadow: inset 0 0 0.8em 0 $secondary, 0 0 0.8em 0 $secondary;
+      background-color: $secondary;
+      color: #fff;
+    }
+
+    .active {
+      box-shadow: inset 0 0 0.8em 0 $secondary, 0 0 0.8em 0 $secondary;
+      background-color: $secondary;
+      color: #fff;
+    }
+  }
+
+  .skillContainer {
+    background: rgba($secondary, 0.2);
+    backdrop-filter: blur(30px);
+    padding: 0 2rem;
+
+    .skill {
+      position: relative;
+      padding: 2em 2em;
+      border-left: 2px solid $light;
+
+      h4 {
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 1rem;
+        margin-bottom: 0.1em;
+      }
+
+      .title {
+        &::before {
+          content: '';
+          position: absolute;
+          left: 2em;
+          font-weight: bold;
+          top: 1em;
+          display: block;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          font-size: 0.785rem;
+        }
+
+        &::after {
+          width: 10px;
+          height: 10px;
+          display: block;
+          top: 2.1em;
+          position: absolute;
+          left: -7px;
+          border-radius: 10px;
+          content: '';
+          border: 2px solid $light;
+          background: $lighter;
+        }
+      }
+    }
+  }
+}
