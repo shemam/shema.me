@@ -1,0 +1,26 @@
+@import '../../styles/variables';
+
+.container {
+  margin-top: 2.5rem;
+  display: grid;
+
+  height: 100%;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  @include mid-large {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .text {
+    @include app-paragraph {
+      word-break: break-all;
+    }
+  }
+
+  .address {
+    @include mid-large {
+      justify-self: flex-end;
+    }
+  }
+}

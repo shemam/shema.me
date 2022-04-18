@@ -45,22 +45,30 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
 
-    .heroSection {
-      border: red 1px solid;
+    .contact {
+      padding: 3rem 2rem;
+      @include mid-large {
+        padding: 10rem 2rem;
+      }
     }
 
-    .skillsSection {
-      height: 100vh;
+    .hero {
+      margin: 0 auto !important;
+
+      padding: 6rem 2rem;
+
+      @include tablet {
+        height: 100vh;
+        padding: 12rem 2rem;
+      }
     }
 
     section {
-      height: 95vh;
-
-      h1 {
-        font-size: 2rem;
-        font-weight: 800;
-        // text-align: center;
-        color: $lighter;
+      max-width: 1200px;
+      .header {
+        @include header {
+          color: $lighter;
+        }
       }
       @include medium {
         width: 100%;
@@ -74,8 +82,15 @@
 
       width: 95%;
 
-      margin: 0 auto;
-      padding: 2rem;
+      margin: 10rem auto;
+      padding: 0 2rem;
+    }
+
+    .footer {
+      background: rgba($secondary, 0.2);
+      backdrop-filter: blur(30px);
+      text-align: center;
+      padding: 0.5rem 0;
     }
   }
 }

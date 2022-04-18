@@ -9,12 +9,14 @@
     background-color: transparent;
 
     li {
-      width: 100%;
-      padding: 1rem 4rem;
-      text-align: center;
-      color: $lighter;
-      background-color: transparent;
-      transition: all 0.5s;
+      @include sub-header {
+        width: 100%;
+        padding: 1rem 0;
+        text-align: center;
+        color: $lighter;
+        background-color: transparent;
+        transition: all 0.5s;
+      }
     }
 
     li:hover {
@@ -41,12 +43,14 @@
       border-left: 2px solid $light;
 
       h4 {
-        font-size: 1.2rem;
+        @include sub-header {
+        }
       }
 
       p {
-        font-size: 1rem;
-        margin-bottom: 0.1em;
+        @include app-paragraph {
+          margin-bottom: 0.1em;
+        }
       }
 
       .title {

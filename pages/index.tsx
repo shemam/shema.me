@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { NavBar, Skills } from '../components';
+import { NavBar, Skills, Work, Contact, About, Hero } from '../components';
 import styles from '../styles/Home.module.scss';
 
 const Home: NextPage = () => (
@@ -15,34 +15,33 @@ const Home: NextPage = () => (
       <NavBar />
     </aside>
     <main>
-      <section>
-        <div>
-          <h1>Hero section</h1>
-        </div>
+      <section className={styles.hero}>
+        <Hero />
       </section>
 
-      <section>
-        <div>
-          <h1>About section</h1>
-        </div>
+      <section className={styles.about}>
+        <h1 className={styles.header}>About Me</h1>
+        <About />
       </section>
 
-      <section className="" style={{}}>
-        <h1>Key Skills</h1>
+      <section className={styles.skills}>
+        <h1 className={styles.header}> Key Skills</h1>
         <Skills />
       </section>
 
-      <section>
-        <div>
-          <h1>Work section</h1>
-        </div>
+      <section className={styles.work}>
+        <h1 className={styles.header}>Recent Work</h1>
+        <Work />
       </section>
 
-      <section>
-        <div>
-          <h1>Contact section</h1>
-        </div>
+      <section className={styles.contact}>
+        <h1 className={styles.header}>Contact Me</h1>
+        <Contact />
       </section>
+
+      <footer className={styles.footer}>
+        <p>Shema © 2022 All Rights Reserved</p>
+      </footer>
     </main>
   </div>
 );

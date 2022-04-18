@@ -17,38 +17,77 @@ body {
   color: $lighter;
 }
 
-.appBtn {
-  font-size: 20px;
-  height: 40px;
-  width: 125px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  color: $lighter;
-  border: $lighter 3px solid;
-  background-color: transparent;
-  border-radius: 0.25em;
-  box-shadow: inset 0 0 0.5em 0 $secondary, 0 0 0.5em 0 $secondary;
-  transition: all 0.5s;
-}
-
-.appBtn:hover {
-  background-color: $accent;
-  color: #fff;
-}
-
-li {
+li,
+a {
   list-style: none;
   cursor: pointer;
   color: $light;
   font-weight: 700;
 }
 
+a:hover,
 li:hover {
   color: $lighter;
 }
 
 a {
   text-decoration: none;
+}
+
+.appBtn {
+  align-items: center;
+  background-color: $secondary;
+  border: 2px solid $secondary;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: $lighter;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.appBtn:after {
+  background-color: $light;
+  border-radius: 8px;
+  content: '';
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform 0.2s ease-out;
+  z-index: -1;
+}
+
+.appBtn:hover:after {
+  transform: translate(0, 0);
+}
+
+.appBtn:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.appBtn:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .appBtn {
+    padding: 0 40px;
+  }
 }
