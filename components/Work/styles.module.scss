@@ -1,0 +1,82 @@
+@import '../../styles/variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  @include mid-large {
+    align-items: center;
+  }
+  .cardContainer {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    @include mid-large {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    gap: 3rem;
+    margin: 2.5rem 0;
+
+    .card {
+      padding: 1rem;
+      background: rgba($secondary, 0.2);
+      backdrop-filter: blur(30px);
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+
+      header {
+        h1 {
+          @include sub-header {
+          }
+        }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .icon2 {
+          margin-left: 1rem;
+        }
+
+        .icon1,
+        .icon2 {
+          font-size: 1.4rem;
+          color: $light;
+        }
+
+        .icon1:hover,
+        .icon2:hover {
+          cursor: pointer;
+          color: $lighter;
+        }
+      }
+
+      main {
+        p {
+          @include app-paragraph {
+            margin: 1rem 0;
+          }
+        }
+      }
+
+      footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+          @include app-footer {
+            margin: 0 0.5rem;
+          }
+        }
+      }
+    }
+
+    .moreBtn {
+      justify-self: start !important;
+      align-self: flex-start;
+      @include mid-large {
+        border: none;
+        justify-self: center;
+        grid-column: span 2;
+      }
+    }
+  }
+}

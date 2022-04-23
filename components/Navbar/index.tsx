@@ -2,6 +2,7 @@ import { FC, useState } from 'react';
 import Link from 'next/link';
 import { RiMenu5Line } from 'react-icons/ri';
 import { AiOutlineClose } from 'react-icons/ai';
+import { FaGithubSquare, FaLinkedin, FaTwitterSquare, FaInstagramSquare } from 'react-icons/fa';
 import styles from './styles.module.scss';
 import navLinks from './navLink';
 
@@ -28,15 +29,12 @@ const NavBar: FC = () => {
               </li>
             </Link>
           ))}
-          <div className={styles.externalLinks}>
-            <Link href="#contact">
-              <li className="appBtn">Resume</li>
-            </Link>
-
-            <Link href="#contact">
-              <li className="appBtn">Blog</li>
-            </Link>
-          </div>
+        </div>
+        <div className={styles.iconContainer}>
+          <FaGithubSquare />
+          <FaLinkedin />
+          <FaTwitterSquare />
+          <FaInstagramSquare />
         </div>
       </div>
     </nav>

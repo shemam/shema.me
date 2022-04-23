@@ -51,3 +51,39 @@ $xxlarge: 1540px;
     @content;
   }
 }
+
+$golden-ratio: 1.618;
+
+@mixin header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  line-height: clamp(2rem, 2.5vw, 3rem);
+  @content;
+}
+
+@mixin sub-header {
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(0.8rem, 2.5vw, 1.275rem);
+  line-height: clamp(0.9rem * $golden-ratio, 2.5vw * $golden-ratio, 1.525rem * $golden-ratio);
+  @content;
+}
+
+@mixin app-paragraph {
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(0.75rem, 2.5vw, 1rem);
+  line-height: clamp(0.75rem * $golden-ratio, 2.5vw * $golden-ratio, 1.125rem * $golden-ratio);
+  color: $light;
+  @content;
+}
+
+@mixin app-footer {
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(0.75rem, 2.5vw, 1rem);
+  line-height: clamp(0.75rem * $golden-ratio, 2.5vw * $golden-ratio, 1.125rem * $golden-ratio);
+  color: $lighter;
+  @content;
+}
