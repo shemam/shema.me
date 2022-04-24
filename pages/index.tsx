@@ -15,27 +15,29 @@ const Home: NextPage = () => (
       <NavBar />
     </aside>
     <main>
-      <section className={styles.hero}>
+      <section className={styles.hero} id="home">
         <Hero />
       </section>
 
       <section className={styles.about}>
-        <h1 className={styles.header}>About Me</h1>
+        <h1 className={styles.header} id="about">
+          About Me.
+        </h1>
         <About />
       </section>
 
-      <section className={styles.skills}>
-        <h1 className={styles.header}> Key Skills</h1>
+      <section className={styles.skills} id="skills">
+        <h1 className={styles.header}> Key Skills.</h1>
         <Skills />
       </section>
 
-      <section className={styles.work}>
-        <h1 className={styles.header}>Recent Work</h1>
+      <section className={styles.work} id="work">
+        <h1 className={styles.header}>Recent Work.</h1>
         <Work />
       </section>
 
-      <section className={styles.contact}>
-        <h1 className={styles.header}>Contact Me</h1>
+      <section className={styles.contact} id="contact">
+        <h1 className={styles.header}>Contact Me.</h1>
         <Contact />
       </section>
 

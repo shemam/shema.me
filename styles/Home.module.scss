@@ -67,7 +67,7 @@
       max-width: 1200px;
       .header {
         @include header {
-          color: $lighter;
+          color: $white;
         }
       }
       @include medium {
@@ -81,9 +81,9 @@
       }
 
       width: 95%;
+      margin: 0 auto;
 
-      margin: 10rem auto;
-      padding: 0 2rem;
+      padding: 4rem 2rem;
     }
 
     .footer {
@@ -91,6 +91,10 @@
       backdrop-filter: blur(30px);
       text-align: center;
       padding: 0.5rem 0;
+
+      p {
+        @include app-footer;
+      }
     }
   }
 }

@@ -4,13 +4,13 @@ import styles from './styles.module.scss';
 export const FrontEnd: FC = () => (
   <div className={styles.skillContainer}>
     <div className={styles.skill}>
-      <h4 className={styles.title}>Languages.</h4>
+      <h2 className={styles.title}>Languages.</h2>
       <p>Javascript(ES6+)</p>
       <p>Typescript</p>
     </div>
 
     <div className={styles.skill}>
-      <h4 className={styles.title}>Libraries & Frameworks.</h4>
+      <h2 className={styles.title}>Libraries & Frameworks.</h2>
       <p>React</p>
       <p>Svelte</p>
       <p>Web3js</p>
@@ -20,7 +20,7 @@ export const FrontEnd: FC = () => (
     </div>
 
     <div className={styles.skill}>
-      <h4 className={styles.title}>Css Frameworks.</h4>
+      <h2 className={styles.title}>Css Frameworks.</h2>
       <p>Material ui</p>
       <p>Tailwind css</p>
       <p>Ant Design</p>
@@ -31,14 +31,14 @@ export const FrontEnd: FC = () => (
 export const BackEnd: FC = () => (
   <div className={styles.skillContainer}>
     <div className={styles.skill}>
-      <h4 className={styles.title}>Languages.</h4>
+      <h2 className={styles.title}>Languages.</h2>
       <p>Typescript</p>
       <p>Python</p>
       <p>Solidity</p>
     </div>
 
     <div className={styles.skill}>
-      <h4 className={styles.title}>Libraries & Frameworks.</h4>
+      <h2 className={styles.title}>Libraries & Frameworks.</h2>
       <p>Node/express</p>
       <p>Nest</p>
       <p>Flask</p>
@@ -46,7 +46,7 @@ export const BackEnd: FC = () => (
     </div>
 
     <div className={styles.skill}>
-      <h4 className={styles.title}>Database.</h4>
+      <h2 className={styles.title}>Database.</h2>
       <p>Postgres</p>
       <p>MongoDB</p>
       <p>Redis</p>
@@ -57,19 +57,19 @@ export const BackEnd: FC = () => (
 export const DevOops: FC = () => (
   <div className={styles.skillContainer}>
     <div className={styles.skill}>
-      <h4 className={styles.title}>Languages</h4>
+      <h2 className={styles.title}>Languages</h2>
       <p>Bash</p>
       <p>Nodejs</p>
     </div>
 
     <div className={styles.skill}>
-      <h4 className={styles.title}>Cloud Providers</h4>
+      <h2 className={styles.title}>Cloud Providers</h2>
       <p>Aws</p>
       <p>Heroku</p>
     </div>
 
     <div className={styles.skill}>
-      <h4 className={styles.title}>CI/CD Tools</h4>
+      <h2 className={styles.title}>CI/CD Tools</h2>
       <p>Github Actions</p>
       <p>Travic CI</p>
       <p>Gitlab CI</p>

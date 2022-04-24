@@ -1,12 +1,8 @@
 /* eslint-disable react/jsx-wrap-multilines */
-/* eslint-disable react/no-children-prop */
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable no-unused-vars */
-import { FC, ReactNode, useState } from 'react';
+import { FC, ReactNode } from 'react';
 import Link from 'next/link';
 import { BiWindowOpen } from 'react-icons/bi';
 import { VscSourceControl } from 'react-icons/vsc';
-import { AiFillGithub } from 'react-icons/ai';
 
 import styles from './styles.module.scss';
 
@@ -47,129 +43,82 @@ const Card: FC<Tcard> = ({ title, content, footer, children }) => (
   </div>
 );
 
-const Work: FC = () => {
-  const [work, useWork] = useState('');
-  return (
-    <div className={styles.container}>
-      <div className={styles.cardContainer}>
-        <Card
-          children={<Link1 link="hah" />}
-          title="Fiesta"
-          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. A magnam doloremque aperiam unde, corrupti nisi non
+const Work: FC = () => (
+  <div className={styles.container}>
+    <div className={styles.cardContainer}>
+      <Card
+        title="Fiesta"
+        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. A magnam doloremque aperiam unde, corrupti nisi non
         adipisci harum fugiat voluptas?"
-          footer={
-            <>
-              <p>Aws</p>
-              <p>NextJs</p>
-              <p>Bootsrap</p>
-              <p>Graphql</p>
-            </>
-          }
-        />
+        footer={
+          <>
+            <p>Aws</p>
+            <p>NextJs</p>
+            <p>Bootsrap</p>
+            <p>Graphql</p>
+          </>
+        }
+      >
+        <Link1 link="hah" />
+      </Card>
 
-        <Card
-          children={<Link1 link="hah" />}
-          title="COA"
-          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. A magnam doloremque aperiam unde, corrupti nisi non
+      <Card
+        title="COA"
+        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. A magnam doloremque aperiam unde, corrupti nisi non
         adipisci harum fugiat voluptas?"
-          footer={
-            <>
-              <p>Aws</p>
-              <p>NextJs</p>
-              <p>Bootsrap</p>
-              <p>Graphql</p>
-            </>
-          }
-        />
+        footer={
+          <>
+            <p>Aws</p>
+            <p>NextJs</p>
+            <p>Bootsrap</p>
+            <p>Graphql</p>
+          </>
+        }
+      >
+        <Link1 link="hah" />
+      </Card>
 
-        <Card
-          children={
-            <>
-              <Link1 link="hah" />
-              <Link2 link="haha" />
-            </>
-          }
-          title="Fiesta"
-          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. A magnam doloremque aperiam unde, corrupti nisi non
+      <Card
+        title="Fiesta"
+        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. A magnam doloremque aperiam unde, corrupti nisi non
         adipisci harum fugiat voluptas?"
-          footer={
-            <>
-              <p>Aws</p>
-              <p>NextJs</p>
-              <p>Bootsrap</p>
-              <p>Graphql</p>
-            </>
-          }
-        />
+        footer={
+          <>
+            <p>Aws</p>
+            <p>NextJs</p>
+            <p>Bootsrap</p>
+            <p>Graphql</p>
+          </>
+        }
+      >
+        <Link1 link="hah" />
+        <Link2 link="haha" />
+      </Card>
 
-        <Card
-          children={
-            <>
-              <Link1 link="hah" />
-              <Link2 link="haha" />
-            </>
-          }
-          title="Fiesta"
-          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. A magnam doloremque aperiam unde, corrupti nisi non
+      <Card
+        title="Fiesta"
+        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. A magnam doloremque aperiam unde, corrupti nisi non
         adipisci harum fugiat voluptas?"
-          footer={
-            <>
-              <p>Aws</p>
-              <p>NextJs</p>
-              <p>Bootsrap</p>
-              <p>Graphql</p>
-            </>
-          }
-        />
-
-        <Card
-          children={
-            <>
-              <Link1 link="hah" />
-              <Link2 link="haha" />
-            </>
-          }
-          title="Fiesta"
-          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. A magnam doloremque aperiam unde, corrupti nisi non
-        adipisci harum fugiat voluptas?"
-          footer={
-            <>
-              <p>Aws</p>
-              <p>NextJs</p>
-              <p>Bootsrap</p>
-              <p>Graphql</p>
-            </>
-          }
-        />
-
-        <Card
-          children={
-            <>
-              <Link1 link="hah" />
-              <Link2 link="haha" />
-            </>
-          }
-          title="Fiesta"
-          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. A magnam doloremque aperiam unde, corrupti nisi non
-        adipisci harum fugiat voluptas?"
-          footer={
-            <>
-              <p>Aws</p>
-              <p>NextJs</p>
-              <p>Bootsrap</p>
-              <p>Graphql</p>
-            </>
-          }
-        />
-      </div>
-
-      <div className={`${styles.moreBtn}`}>
-        <a href="https://github.com/shemamugisha?tab=repositories" className="appBtn">
-          More
-        </a>
-      </div>
+        footer={
+          <>
+            <p>Aws</p>
+            <p>NextJs</p>
+            <p>Bootsrap</p>
+            <p>Graphql</p>
+          </>
+        }
+      >
+        <Link1 link="hah" />
+        <Link2 link="haha" />
+      </Card>
     </div>
-  );
-};
+
+    <div className={`${styles.moreBtn}`}>
+      <Link href="https://github.com/shemamugisha?tab=repositories">
+        <span className="appBtn">More</span>
+      </Link>
+    </div>
+  </div>
+);
 
 export default Work;

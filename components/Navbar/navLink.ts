@@ -9,7 +9,7 @@ const navLinks = [
   },
   {
     name: 'Work',
-    url: '/#projects',
+    url: '/#work',
   },
   {
     name: 'Contact',

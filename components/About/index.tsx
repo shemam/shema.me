@@ -6,10 +6,10 @@ import ShemaImage from '../../public/assets/shemamugisha.jpg';
 const About: FC = () => (
   <div className={styles.container}>
     <div className={styles.bio}>
-      <h3>
+      <p className={styles.topText}>
         I&apos;m a web developer with more than 2 years of experience, dedicated to solving business problems through
         creating dynamic user experiences and highly interested in web3 technologies.
-      </h3>
+      </p>
 
       <p>
         highly motivated on learning new stuff, problem solver, Team player and besides software development traveling
