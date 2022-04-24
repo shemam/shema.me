@@ -12,6 +12,9 @@
   gap: 2rem;
 
   .bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     @include app-paragraph {
       width: 100%;
       word-break: break-all;

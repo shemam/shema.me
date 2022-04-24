@@ -7,7 +7,7 @@ const Home: NextPage = () => (
   <div className={styles.container}>
     <Head>
       <title>shema website</title>
-      <meta name="description" content="shema biography" />
+      <meta name="description" content="shema mugisha" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
 

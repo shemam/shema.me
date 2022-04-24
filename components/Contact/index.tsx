@@ -6,14 +6,14 @@ const Contact: FC = () => (
   <div className={styles.container}>
     <div className={styles.text}>
       <p>
-        I’m interested in freelance opportunities – especially ambitious or large projects. However, if you have other
-        request or question, don’t hesitate to use the form.
+        I&apos;m interested in blockchain app development or front-end development opportunities – especially high
+        performant systems to solve real-world challenges.
       </p>
     </div>
 
     <div className={styles.address}>
       <a className="appBtn" href="mailto:shemaamugisha@gmail.com">
-        Hello
+        let&apos;s talk
       </a>
     </div>
   </div>

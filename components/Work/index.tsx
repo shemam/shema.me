@@ -164,7 +164,7 @@ const Work: FC = () => {
       </div>
 
       <div className={`${styles.moreBtn}`}>
-        <a href="https://github.com/shemamugisha" className="appBtn">
+        <a href="https://github.com/shemamugisha?tab=repositories" className="appBtn">
           More
         </a>
       </div>

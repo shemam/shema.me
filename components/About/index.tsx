@@ -7,15 +7,13 @@ const About: FC = () => (
   <div className={styles.container}>
     <div className={styles.bio}>
       <h3>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque veniam blanditiis cum odit soluta temporibus
-        possimus dolores. Mollitia adipisci aliquam nesciunt in, fuga dignissimos perferendis beatae eos voluptatum
-        tenetur itaque ab doloremque totam obcaecati. Dolorum earum porro ratione aliquam itaque necessitatibus animi
+        I&apos;m a web developer with more than 2 years of experience, dedicated to solving business problems through
+        creating dynamic user experiences and highly interested in web3 technologies.
       </h3>
 
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati labore consectetur ipsum! Dolorem, ut?
-        Doloremque laudantium fuga quos obcaecati nisi, incidunt assumenda aperiam iste consectetur exercitationem
-        maxime, nostrum fugit voluptates?
+        highly motivated on learning new stuff, problem solver, Team player and besides software development traveling
+        is my biggest passion.
       </p>
     </div>
     <div className={styles.imageContainer}>

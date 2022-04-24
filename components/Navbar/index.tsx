@@ -31,10 +31,18 @@ const NavBar: FC = () => {
           ))}
         </div>
         <div className={styles.iconContainer}>
-          <FaGithubSquare />
-          <FaLinkedin />
-          <FaTwitterSquare />
-          <FaInstagramSquare />
+          <Link href="https://github.com/shemamugisha">
+            <FaGithubSquare />
+          </Link>
+          <Link href="https://www.linkedin.com/in/shemamugisha/">
+            <FaLinkedin />
+          </Link>
+          <Link href="https://twitter.com/shemamugisha_">
+            <FaTwitterSquare />
+          </Link>
+          <Link href="https://www.instagram.com/shemamugisha_/">
+            <FaInstagramSquare />
+          </Link>
         </div>
       </div>
     </nav>
