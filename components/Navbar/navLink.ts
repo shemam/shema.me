@@ -7,10 +7,10 @@ const navLinks = [
     name: 'Skills',
     url: '/#skills',
   },
-  {
-    name: 'Work',
-    url: '/#work',
-  },
+  // {
+  //   name: 'Work',
+  //   url: '/#work',
+  // },
   {
     name: 'Contact',
     url: '/#contact',

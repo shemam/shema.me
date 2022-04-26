@@ -18,15 +18,15 @@ type Tlink = {
 };
 
 const Link1: FC<Tlink> = ({ link }) => (
-  <Link href={link}>
+  <a href={link} rel="noreferrer" target="_blank">
     <BiWindowOpen className={styles.icon1} />
-  </Link>
+  </a>
 );
 
 const Link2: FC<Tlink> = ({ link }) => (
-  <Link href={link}>
+  <a rel="noreferrer" target="_blank" href={link}>
     <VscSourceControl className={styles.icon2} />
-  </Link>
+  </a>
 );
 
 const Card: FC<Tcard> = ({ title, content, footer, children }) => (
@@ -48,68 +48,63 @@ const Work: FC = () => (
     <div className={styles.cardContainer}>
       <Card
         title="Fiesta"
-        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. A magnam doloremque aperiam unde, corrupti nisi non
-        adipisci harum fugiat voluptas?"
+        content="A web platform makes it easier for influencers to recommend some products to their followers."
         footer={
           <>
             <p>Aws</p>
             <p>NextJs</p>
-            <p>Bootsrap</p>
+            <p>Material-ui</p>
             <p>Graphql</p>
           </>
         }
       >
-        <Link1 link="hah" />
+        <Link1 link="https://fiesta.club/" />
       </Card>
 
       <Card
         title="COA"
-        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. A magnam doloremque aperiam unde, corrupti nisi non
-        adipisci harum fugiat voluptas?"
+        content="A company, which enables competitive pricing compared to Developer-as-a-Service business in the DACH region and a fair local pay at the same time."
         footer={
           <>
-            <p>Aws</p>
-            <p>NextJs</p>
-            <p>Bootsrap</p>
-            <p>Graphql</p>
+            <p>Javascript</p>
+            <p>Sass</p>
+            <p>Boostrap</p>
+            <p>Nodejs</p>
           </>
         }
       >
-        <Link1 link="hah" />
+        <Link1 link="https://test.codeofafrica.com/EN" />
       </Card>
 
       <Card
-        title="Fiesta"
-        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. A magnam doloremque aperiam unde, corrupti nisi non
-        adipisci harum fugiat voluptas?"
+        title="Movein"
+        content="A platform connecting buyers and sellers for low- to mid-price housing in Rwanda."
         footer={
           <>
-            <p>Aws</p>
+            <p>Typescript</p>
             <p>NextJs</p>
-            <p>Bootsrap</p>
-            <p>Graphql</p>
+            <p>Redux</p>
+            <p>Material-ui</p>
           </>
         }
       >
-        <Link1 link="hah" />
-        <Link2 link="haha" />
+        <Link1 link="https://movein-v1.netlify.app/" />
       </Card>
 
       <Card
-        title="Fiesta"
-        content="Lorem ipsum dolor sit amet consectetur adipisicing elit. A magnam doloremque aperiam unde, corrupti nisi non
-        adipisci harum fugiat voluptas?"
+        title="Budget App"
+        content="A simple Budget App for tracking and manage your money by creating budgets and add expenses."
         footer={
           <>
-            <p>Aws</p>
-            <p>NextJs</p>
-            <p>Bootsrap</p>
-            <p>Graphql</p>
+            <p>Typescript</p>
+            <p>React</p>
+            <p>Bootstrap</p>
+            <p>localStorage</p>
           </>
         }
       >
-        <Link1 link="hah" />
-        <Link2 link="haha" />
+        <Link1 link="https://expeenses-app.netlify.app/" />
+        <Link2 link="https://github.com/shemamugisha/budget-app" />
       </Card>
     </div>
 

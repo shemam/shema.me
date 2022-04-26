@@ -2,7 +2,7 @@ import { FC, useState } from 'react';
 import Link from 'next/link';
 import { RiMenu5Line } from 'react-icons/ri';
 import { AiOutlineClose } from 'react-icons/ai';
-import { FaGithubSquare, FaLinkedin, FaTwitterSquare, FaInstagramSquare } from 'react-icons/fa';
+import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
 import styles from './styles.module.scss';
 import navLinks from './navLink';
 
@@ -31,18 +31,18 @@ const NavBar: FC = () => {
           ))}
         </div>
         <div className={styles.iconContainer}>
-          <Link href="https://github.com/shemamugisha">
+          <a rel="noreferrer" target="_blank" href="https://github.com/shemamugisha">
             <FaGithubSquare />
-          </Link>
-          <Link href="https://www.linkedin.com/in/shemamugisha/">
+          </a>
+          <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/shemamugisha/">
             <FaLinkedin />
-          </Link>
-          <Link href="https://twitter.com/shemamugisha_">
+          </a>
+          <a rel="noreferrer" target="_blank" href="https://twitter.com/shemamugisha_">
             <FaTwitterSquare />
-          </Link>
-          <Link href="https://www.instagram.com/shemamugisha_/">
+          </a>
+          {/* <a rel="noreferrer" target="_blank" href="https://www.instagram.com/shemamugisha_/">
             <FaInstagramSquare />
-          </Link>
+          </a> */}
         </div>
       </div>
     </nav>

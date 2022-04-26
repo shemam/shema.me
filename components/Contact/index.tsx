@@ -12,7 +12,7 @@ const Contact: FC = () => (
     </div>
 
     <div className={styles.address}>
-      <a className="appBtn" href="mailto:shemaamugisha@gmail.com">
+      <a className="appBtn" href="mailto:azertshema@gmail.com">
         let&apos;s talk
       </a>
     </div>

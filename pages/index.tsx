@@ -1,13 +1,13 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { NavBar, Skills, Work, Contact, About, Hero } from '../components';
+import { NavBar, Skills, Contact, About, Hero } from '../components';
 import styles from '../styles/Home.module.scss';
 
 const Home: NextPage = () => (
   <div className={styles.container}>
     <Head>
-      <title>shema website</title>
-      <meta name="description" content="shema mugisha" />
+      <title>shema mugisha | home</title>
+      <meta name="description" content="shema mugisha portfolio" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
@@ -30,11 +30,11 @@ const Home: NextPage = () => (
         <h1 className={styles.header}> Key Skills.</h1>
         <Skills />
       </section>
-
+      {/*
       <section className={styles.work} id="work">
         <h1 className={styles.header}>Recent Work.</h1>
         <Work />
-      </section>
+      </section> */}
 
       <section className={styles.contact} id="contact">
         <h1 className={styles.header}>Contact Me.</h1>

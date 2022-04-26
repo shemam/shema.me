@@ -13,8 +13,8 @@ export const FrontEnd: FC = () => (
       <h2 className={styles.title}>Libraries & Frameworks.</h2>
       <p>React</p>
       <p>Svelte</p>
-      <p>Web3js</p>
-      <p>Etherjs</p>
+      {/* <p>Web3js</p>
+      <p>Etherjs</p> */}
       <p>Graphql/apollo-client</p>
       <p>React/redux</p>
     </div>
@@ -27,6 +27,8 @@ export const FrontEnd: FC = () => (
     </div>
   </div>
 );
+
+// 0x6b337061bcb5b372ac9054f12251241444da81f8;
 
 export const BackEnd: FC = () => (
   <div className={styles.skillContainer}>

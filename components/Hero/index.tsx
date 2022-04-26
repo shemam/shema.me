@@ -10,7 +10,12 @@ const Hero: FC = () => (
       <p>Front End Developer / Blockchain App Developer</p>
     </div>
     <div>
-      <a href="#contact" className="appBtn">
+      <a
+        href="https://drive.google.com/file/d/1IXVQLPwxBa4yGkQ7LJDLsMtCDAcQK-PY/view?usp=sharing"
+        rel="noreferrer"
+        target="_blank"
+        className="appBtn"
+      >
         Resume
       </a>
     </div>

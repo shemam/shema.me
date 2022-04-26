@@ -53,13 +53,13 @@
     }
 
     .hero {
-      margin: 0 auto !important;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
 
-      padding: 6rem 2rem;
-
-      @include tablet {
-        height: 100vh;
-        padding: 12rem 2rem;
+      padding: 0 2rem;
+      justify-content: center;
+      @include medium {
       }
     }
 
@@ -83,7 +83,7 @@
       width: 95%;
       margin: 0 auto;
 
-      padding: 4rem 2rem;
+      padding: 2rem;
     }
 
     .footer {
